@@ -1,0 +1,18 @@
+{
+  "files":[
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "compilerOptions":{
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es6",
+    "module": "commonjs",
+    "baseUrl": "./", //required to ensure proper base directory set
+    "paths" : { "src/*" : ["./src/*/"] },
+    "outDir": "dist",
+    "rootDir": "src",
+    "jsx": "react",
+    "moduleResolution": "classic"
+  }
+}
